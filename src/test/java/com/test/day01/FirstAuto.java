@@ -7,11 +7,11 @@ import static io.restassured.RestAssured.given;
  */
 public class FirstAuto {
     public static void main(String[] args) {
-        //通过REST-assured编写代码进行接口测试
-        //语法格式：三段式结构 given...when...then..
-        //given()后面一般我们是设置请求头、请求参数
-        //when() 后面一般我们是发起接口请求
-        //then() 后面一般我们可以解析获取接口的响应结果
+        //todo:通过REST-assured编写代码进行接口测试
+        //todo:语法格式：三段式结构 given...when...then..
+        //todo:given()后面一般我们是设置请求头、请求参数
+        //todo:when() 后面一般我们是发起接口请求
+        //todo:then() 后面一般我们可以解析获取接口的响应结果
         //===================登录接口请求代码============================
         given().
                 log().all().

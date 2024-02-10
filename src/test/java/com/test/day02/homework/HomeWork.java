@@ -5,11 +5,6 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
 /**
- * @Site: http://www.lemonban.com
- * @Forum: http://testingpai.com
- * @Copyright 湖南省零檬信息技术有限公司. All rights reserved.
- * @Author: 歪歪欧巴
- * @Create: 2022-11-09
  * @Desc: 作业练习
  */
 public class HomeWork {

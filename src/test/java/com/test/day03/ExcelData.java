@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 /**
  * @Desc: Excel数据
  */
+//todo:使用lombok插件，自动生成get/set方法,无参构造,全参构造,toString方法
 //@Data
 //@NoArgsConstructor
 //@AllArgsConstructor

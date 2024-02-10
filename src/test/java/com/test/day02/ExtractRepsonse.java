@@ -117,22 +117,7 @@ public class ExtractRepsonse {
         then().
                 log().all();
         //3、商品详情页接口请求
-        given().
-                log().all().
-        when().
-                get("http://mall.lemonban.com:8107/prod/prodInfo?prodId=83").
-        then().
-                log().all();
         //4、添加购物车
-        given().
-                log().all().
-                header("Content-Type","application/json").
-                header("Authorization",token).
-                body("{\"basketId\":0,\"count\":1,\"prodId\":\"85\",\"shopId\":1,\"skuId\":417}").
-        when().
-                post("http://mall.lemonban.com:8107/p/shopCart/changeItem").
-        then().
-                log().all();
 
     }
 }

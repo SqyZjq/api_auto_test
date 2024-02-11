@@ -18,6 +18,20 @@ public class ExcelData {
     private String url;
     private String header;
     private String param;
+    private String responseAssert;
+
+    @Override
+    public String toString() {
+        return "ExcelData{" +
+                "caseId=" + caseId +
+                ", title='" + title + '\'' +
+                ", method='" + method + '\'' +
+                ", url='" + url + '\'' +
+                ", header='" + header + '\'' +
+                ", param='" + param + '\'' +
+                ", responseAssert='" + responseAssert + '\'' +
+                '}';
+    }
 
     public int getCaseId() {
         return caseId;
@@ -67,15 +81,11 @@ public class ExcelData {
         this.param = param;
     }
 
-    @Override
-    public String toString() {
-        return "ExcelData{" +
-                "caseId=" + caseId +
-                ", title='" + title + '\'' +
-                ", method='" + method + '\'' +
-                ", url='" + url + '\'' +
-                ", header='" + header + '\'' +
-                ", param='" + param + '\'' +
-                '}';
+    public String getResponseAssert() {
+        return responseAssert;
+    }
+
+    public void setResponseAssert(String responseAssert) {
+        this.responseAssert = responseAssert;
     }
 }

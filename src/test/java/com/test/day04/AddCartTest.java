@@ -15,6 +15,8 @@ public class AddCartTest extends BaseTest{
     @Test(dataProvider = "getDatas")
     public void test_addCart(ExcelData excelData){
         Response res = request(excelData);
+        //断言
+        assertResponse(excelData,res);
     }
 
     @DataProvider

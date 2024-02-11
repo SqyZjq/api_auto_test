@@ -20,6 +20,7 @@ public class DDTTest {
     public void test_login(ExcelData excelData) throws IOException {
 //        System.out.println(excelData);
         //发起接口请求
+        //todo:ExcelData实体类读取的是一行数据,每次传一行递读取到的Excel中的数据,
         //读取到的是json格式的数据{"Content-Type":"application/json"}
         String header = excelData.getHeader();
         //todo:json格式字符串转成map类型,map类型就是键值对的形式- Jackson,
@@ -47,9 +48,10 @@ public class DDTTest {
         //优点：1、减少代码的冗余 2、方便后期维护
         //设置数据驱动测试 数据源
         //todo:读取Excel中的数据 - easyexcel,head映射到ExcelData实体类的属性值,属性值映射到Excel中的表头
-        //todo:实体类：保存从Excel读取的数据,doReadSync()返回的是List集合类型
+        //todo:ExcelData实体类读取的是一行数据,所有行的数据需要用List集合保存,doReadSync()返回的是List集合类型
         List<ExcelData> allDatas = EasyExcel.read("src/test/resources/testdata.xlsx").
-                head(ExcelData.class).sheet(0).doReadSync();
+                head(ExcelData.class).sheet("Sheet1").doReadSync();
+        System.out.println(allDatas);
         //需要把List集合类型转换为数组类型
         return allDatas.toArray();
     }

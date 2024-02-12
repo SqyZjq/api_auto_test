@@ -1,0 +1,41 @@
+Request method:	POST
+Request URI:	http://mall.lemonban.com:8107/p/shopCart/changeItem
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=bearera26892b8-d740-43da-b12b-92a1c0668e5f
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "basketId": 0,
+    "count": 1,
+    "prodId": "94",
+    "shopId": 1,
+    "skuId": 426
+}
+HTTP/1.1 401 
+Transfer-Encoding: chunked
+Cache-Control: no-store
+Connection: keep-alive
+Content-Type: application/json
+Date: Mon, 12 Feb 2024 10:13:36 GMT
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Www-Authenticate: Bearer realm="oauth2-resource", error="invalid_token", error_description="Invalid access token: a26892b8-d740-43da-b12b-92a1c0668e5f"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+{
+    "error": "invalid_token",
+    "error_description": "Invalid access token: a26892b8-d740-43da-b12b-92a1c0668e5f"
+}

@@ -3,9 +3,9 @@
 <suite name="测试套件" >
     <test name="测试">
         <classes>
-            <class name="com.test.day05.LoginTest"/>
-            <class name="com.test.day05.SearchProductTest"/>
-            <class name="com.test.day05.AddCartTest"/>
+            <class name="com.test.day06.LoginTest"/>
+            <class name="com.test.day06.SearchProductTest"/>
+            <class name="com.test.day06.AddCartTest"/>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,36 @@
+Request method:	POST
+Request URI:	http://mall.lemonban.com:8107/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "principal": "lemon_auto",
+    "credentials": "",
+    "appType": 3,
+    "loginType": 1
+}
+HTTP/1.1 400 
+Content-Length: 27
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Mon, 12 Feb 2024 09:28:57 GMT
+Expires: 0
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+验证码有误或已过期

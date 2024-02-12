@@ -1,17 +1,16 @@
-package com.test.day05;
+package com.test.day06;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.test.day03.ExcelData;
+import io.qameta.allure.Allure;
 import io.restassured.RestAssured;
 import io.restassured.config.LogConfig;
+import io.restassured.config.RestAssuredConfig;
 import io.restassured.response.Response;
 import org.testng.Assert;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.Map;
 import java.util.Set;
 
@@ -29,12 +28,11 @@ public class BaseTest {
         //类似于postman/Jmeter
         //需求：封装一个能够兼容我们的项目所有请求的代码
         //思路：if...else...,通过请求方法来进行判断
-        //todo:做日志持久化存储配置-将日志保存到文件中
-        //todo:PrintStream 打印输出流，将控制台的日志打印输出到文件
-
+        //做日志持久化存储配置-将日志保存到文件中
+        //PrintStream 打印输出流，将控制台的日志打印输出到文件
         PrintStream printStream = null;
-        //创建一个target/log文件夹用来存储所有的接口日志文件,mac / windows是\\ ,File.separator 可以兼容mac和windows的路径分隔符
-        String logfileDir = System.getProperty("user.dir")+"/log";
+        //创建一个target/log文件夹用来存储所有的接口日志文件,File.separator可以兼容mac和windows的路径分隔符
+        String logfileDir = System.getProperty("user.dir")+File.separator +"log";
         System.out.println("Log file directory: " + logfileDir);
         File file = new File(logfileDir);
         if(!file.exists()){
@@ -42,13 +40,13 @@ public class BaseTest {
             boolean dirCreated = file.mkdirs();
             System.out.println("Directory created: " + dirCreated);
         }
-        String logfilePath = logfileDir+"/testlog_"+excelData.getTitle();
+        String logfilePath = logfileDir+File.separator +"testlog_"+excelData.getTitle();
         try {
             printStream = new PrintStream(new File(logfilePath));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        RestAssured.config = RestAssured.config().logConfig(LogConfig.logConfig().defaultStream(printStream));
+        RestAssured.config = RestAssuredConfig.config().logConfig(LogConfig.logConfig().defaultStream(printStream));
 
         Response res = null;
         if( excelData.getMethod().equals("get")){
@@ -76,6 +74,14 @@ public class BaseTest {
         }else if(excelData.getMethod().equals("delete")){
             //后续再完善
         }
+
+        //接口请求结束之后，将接口日志添加到Allure报告中
+        try {
+            Allure.addAttachment("接口请求日志&响应日志",new FileInputStream(logfilePath));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
         return res;
     }
 
@@ -116,4 +122,5 @@ public class BaseTest {
             }
         }
     }
+
 }

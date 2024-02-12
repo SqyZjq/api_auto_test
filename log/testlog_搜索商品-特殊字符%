@@ -1,0 +1,134 @@
+Request method:	GET
+Request URI:	http://mall.lemonban.com:8107/search/searchProdPage?prodName=%25
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Transfer-Encoding: chunked
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Mon, 12 Feb 2024 10:13:36 GMT
+Expires: 0
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+{
+    "records": [
+        {
+            "prodId": 27,
+            "pic": "http://shop.lemonban.com:8108/2022/06/4be70b24f1d74615b9225084a2b51363.jpg",
+            "prodName": "MIEARVL KGDS春季新款包包女斜挎包小众设计质感迷你链条包手提包",
+            "price": 399.0,
+            "prodCommNumber": 1,
+            "positiveRating": 100.0,
+            "praiseNumber": 1
+        },
+        {
+            "prodId": 28,
+            "pic": "http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg",
+            "prodName": "真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女",
+            "price": 139.0,
+            "prodCommNumber": 0,
+            "positiveRating": 0.0,
+            "praiseNumber": 0
+        },
+        {
+            "prodId": 31,
+            "pic": "http://shop.lemonban.com:8108/2022/06/fdd1ee0856ad4680a9423b5c79c3f88f.jpg",
+            "prodName": "格格家 网红性感纯欲少女宫廷泡泡袖收腰初恋小黑裙蓬蓬连衣裙潮",
+            "price": 98.0,
+            "prodCommNumber": 0,
+            "positiveRating": 0.0,
+            "praiseNumber": 0
+        },
+        {
+            "prodId": 34,
+            "pic": "http://shop.lemonban.com:8108/2022/11/7959cb9ee2f4408ba3a23ae2f56fbc62.jpeg",
+            "prodName": "阿佳娜姆高定女装春夏款_Alwin",
+            "price": 1200.0,
+            "prodCommNumber": 0,
+            "positiveRating": 0.0,
+            "praiseNumber": 0
+        },
+        {
+            "prodId": 35,
+            "pic": "http://shop.lemonban.com:8108/2022/11/ee2c2577f867404b9d41046593c01876.jpeg",
+            "prodName": "阿佳娜姆高定女装时装周秀款_Alwin",
+            "price": 888.0,
+            "prodCommNumber": 0,
+            "positiveRating": 0.0,
+            "praiseNumber": 0
+        },
+        {
+            "prodId": 43,
+            "pic": "http://shop.lemonban.com:8108/2022/11/97d5f205ed574292b7b1de067359dddd.jpg",
+            "prodName": "【十的测试产品】卫衣男圆领长袖字母印花混纺圆领卫衣打底衫新款",
+            "price": 265.0,
+            "prodCommNumber": 0,
+            "positiveRating": 0.0,
+            "praiseNumber": 0
+        },
+        {
+            "prodId": 46,
+            "pic": "http://shop.lemonban.com:8108/2022/11/12c2fdb6bee74e0583cc10422eb13e24.jpg",
+            "prodName": "【十的测试产品】唐狮2022秋冬装新款男女同码简约字母连帽卫衣",
+            "price": 149.9,
+            "prodCommNumber": 1,
+            "positiveRating": 100.0,
+            "praiseNumber": 1
+        },
+        {
+            "prodId": 47,
+            "pic": "http://shop.lemonban.com:8108/2022/11/4c041cb4ca964d0fa704190872662e8b.jpeg",
+            "prodName": "AJ-NAMOq轻奢女装2022春夏新款",
+            "price": 1500.0,
+            "prodCommNumber": 0,
+            "positiveRating": 0.0,
+            "praiseNumber": 0
+        },
+        {
+            "prodId": 48,
+            "pic": "http://shop.lemonban.com:8108/2022/11/6200523cc9ed4cada1df81d2eae4f29c.jpeg",
+            "prodName": "AJ-NAMO轻奢女装10月新款",
+            "price": 2300.0,
+            "prodCommNumber": 1,
+            "positiveRating": 100.0,
+            "praiseNumber": 1
+        },
+        {
+            "prodId": 49,
+            "pic": "http://shop.lemonban.com:8108/2022/11/80cf927c080940e8a5f591024b38f081.jpeg",
+            "prodName": "AJ-NAMO轻奢女装11月新品",
+            "price": 2500.0,
+            "prodCommNumber": 0,
+            "positiveRating": 0.0,
+            "praiseNumber": 0
+        }
+    ],
+    "total": 1958,
+    "size": 10,
+    "current": 1,
+    "orders": [
+        
+    ],
+    "optimizeCountSql": true,
+    "hitCount": false,
+    "countId": null,
+    "maxLimit": null,
+    "searchCount": true,
+    "pages": 196
+}

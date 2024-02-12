@@ -1,0 +1,46 @@
+Request method:	POST
+Request URI:	http://mall.lemonban.com:8107/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "principal": "lemon_auto",
+    "credentials": "lemon123456",
+    "appType": 3,
+    "loginType": 0
+}
+HTTP/1.1 200 
+Content-Length: 319
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Mon, 12 Feb 2024 09:15:23 GMT
+Expires: 0
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Set-Cookie: JSESSIONID=E6FF39FCDE5FBD4BDBFA101D5868DFDE; Path=/; HttpOnly
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+{
+    "access_token": "64b079fe-30d4-4a27-9b4a-03019eee12e3",
+    "token_type": "bearer",
+    "refresh_token": "75310ae9-9af5-4268-b64c-eb92f657dd64",
+    "expires_in": 1295999,
+    "pic": "http://shop.lemonban.com:8108/2024/02/736fc556dc79428b857ecbbf1a33ba02.png",
+    "userId": "b1e225b251574d059e55c050a288b92d",
+    "nickName": "lemon_auto",
+    "enabled": true
+}

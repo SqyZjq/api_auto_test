@@ -30,6 +30,9 @@ public class HomeWork {
                         "prodName=lucky&categoryId=&sort=0&orderBy=0&current=1&isAllProdType=true&st=0&size=12").
         then().
                 log().all().extract().response();
+        //size()方法获取返回数组的长度
+        int proName = res2.jsonPath().get("records.size()");
+        System.out.println(proName);
         int prodId = res2.jsonPath().get("records[0].prodId");
         //3、商品详情页接口请求
         Response res3 = given().

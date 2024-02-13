@@ -12,20 +12,21 @@ Multiparts:		<none>
 Body:
 {
     "principal": "lemon_auto",
-    "credentials": "",
+    "credentials": "lemon123456",
     "appType": 3,
-    "loginType": 1
+    "loginType": 0
 }
-HTTP/1.1 400 
-Content-Length: 27
+HTTP/1.1 200 
+Content-Length: 319
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Connection: keep-alive
 Content-Type: application/json;charset=UTF-8
-Date: Mon, 12 Feb 2024 10:13:35 GMT
+Date: Tue, 13 Feb 2024 09:24:20 GMT
 Expires: 0
 Keep-Alive: timeout=4
 Pragma: no-cache
 Proxy-Connection: keep-alive
+Set-Cookie: JSESSIONID=50EA9F09E83759455899BB507FA67198; Path=/; HttpOnly
 Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
@@ -33,4 +34,13 @@ X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
 X-Xss-Protection: 1; mode=block
 
-验证码有误或已过期
+{
+    "access_token": "90373ed9-4195-463d-9887-deebe81817a9",
+    "token_type": "bearer",
+    "refresh_token": "77479f80-0f5c-4cc2-bfa4-955e720e6e71",
+    "expires_in": 1295999,
+    "pic": "http://shop.lemonban.com:8108/2024/02/736fc556dc79428b857ecbbf1a33ba02.png",
+    "userId": "b1e225b251574d059e55c050a288b92d",
+    "nickName": "lemon_auto",
+    "enabled": true
+}

@@ -1,11 +1,8 @@
-package com.test.day08.testcases;
+package com.test.day09.testcases;
 
-import com.test.day08.config.Environment;
+import com.test.day09.config.Environment;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import static io.restassured.RestAssured.given;
 
@@ -51,7 +48,7 @@ public class OrderPayTest {
         //4、添加购物车
         given().
                 log().all().
-                header("Authorization","token#").
+                header("Authorization","#token#").
                 header("Content-Type","application/json; charset=UTF-8").
                 body("{\"basketId\":0,\"count\":1,\"prodId\":\"#prodId#\",\"shopId\":1,\"skuId\":#skuId#}").
         when().
@@ -61,12 +58,12 @@ public class OrderPayTest {
         //断言-比较实际的结果与期望结果
         //正则表达式？
     }
-    //已封装好的正则表达式替换方法--在BaseTest中
+
     public static void main(String[] args) {
         //Java中怎么去使用正则表达式
         //{"basketId":0,"count":1,"prodId":"#prodId#","shopId":1,"skuId":#skuId#,"token":#token#}
         //识别里面#XX#
-        Environment.env.put("prodId",80);
+        /*Environment.env.put("prodId",80);
         Environment.env.put("skuId",200);
         Environment.env.put("token","XXXXXXXXX");
         String str = "{\"basketId\":0,\"count\":1,\"prodId\":\"#prodId#\",\"shopId\":1,\"skuId\":#skuId#,\"token\":#token#}";
@@ -87,7 +84,9 @@ public class OrderPayTest {
             //6、把正则匹配的字串（#XXX#）,替换为实际的参数值
             str = str.replace(subStr,value+"");
         }
-        System.out.println(str);
+        System.out.println(str);*/
 
     }
-    }
+
+
+}

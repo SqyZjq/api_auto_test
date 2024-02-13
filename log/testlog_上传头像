@@ -1,0 +1,39 @@
+Request method:	POST
+Request URI:	http://mall.lemonban.com:8107/p/file/upload
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=bearerf31da4d2-729c-4d9b-b743-dc96862bb954
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = 111.png
+				Content-Type: application/octet-stream
+
+				src/test/resources/111.png
+Body:			<none>
+HTTP/1.1 200 
+Transfer-Encoding: chunked
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Tue, 13 Feb 2024 10:57:17 GMT
+Expires: 0
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Set-Cookie: JSESSIONID=450EA9691E2CBBD45BB0D437546B90D6; Path=/; HttpOnly
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+{
+    "resourcesUrl": "http://shop.lemonban.com:8108/",
+    "filePath": "2024/02/ca9905c0a30846be80eb47ef04ae2acc.png"
+}

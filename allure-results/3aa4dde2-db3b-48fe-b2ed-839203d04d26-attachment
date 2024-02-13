@@ -1,27 +1,20 @@
-Request method:	POST
-Request URI:	http://mall.lemonban.com:8107/login
+Request method:	GET
+Request URI:	http://mall.lemonban.com:8107/prod/prodInfo?prodId=null
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "principal": "",
-    "credentials": "lemon123456",
-    "appType": 3,
-    "loginType": 1
-}
+Body:			<none>
 HTTP/1.1 400 
-Content-Length: 27
+Transfer-Encoding: chunked
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Connection: keep-alive
-Content-Type: application/json;charset=UTF-8
-Date: Mon, 12 Feb 2024 10:13:35 GMT
+Content-Type: application/json
+Date: Tue, 13 Feb 2024 09:24:04 GMT
 Expires: 0
 Keep-Alive: timeout=4
 Pragma: no-cache
@@ -33,4 +26,10 @@ X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
 X-Xss-Protection: 1; mode=block
 
-验证码有误或已过期
+{
+    "timestamp": "2024-02-13 17:24:05",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "",
+    "path": "/prod/prodInfo"
+}

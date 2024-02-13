@@ -1,0 +1,46 @@
+Request method:	PUT
+Request URI:	http://mall.lemonban.com:8107/p/user/setUserInfo
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=bearerf31da4d2-729c-4d9b-b743-dc96862bb954
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "avatarUrl": "http://shop.lemonban.com:8108/2024/02/ca9905c0a30846be80eb47ef04ae2acc.png",
+    "nickName": "lemon_auto",
+    "userMobile": "13323232323",
+    "auth": {
+        
+    }
+}
+HTTP/1.1 500 
+Transfer-Encoding: chunked
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Tue, 13 Feb 2024 10:57:18 GMT
+Expires: 0
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Set-Cookie: JSESSIONID=C1D5E31500F8E8839F034B7AAFC0DD81; Path=/; HttpOnly
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+{
+    "timestamp": "2024-02-13 18:57:18",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "",
+    "path": "/p/user/setUserInfo"
+}

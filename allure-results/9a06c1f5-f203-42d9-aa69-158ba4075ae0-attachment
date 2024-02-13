@@ -21,12 +21,12 @@ Content-Length: 319
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Connection: keep-alive
 Content-Type: application/json;charset=UTF-8
-Date: Tue, 13 Feb 2024 10:57:17 GMT
+Date: Tue, 13 Feb 2024 10:04:15 GMT
 Expires: 0
 Keep-Alive: timeout=4
 Pragma: no-cache
 Proxy-Connection: keep-alive
-Set-Cookie: JSESSIONID=FAFED8034B6F87562188E7892AE34ECB; Path=/; HttpOnly
+Set-Cookie: JSESSIONID=FE1B83B4BC028C8EE5D0AAA80D20C2A5; Path=/; HttpOnly
 Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
@@ -35,9 +35,9 @@ X-Frame-Options: DENY
 X-Xss-Protection: 1; mode=block
 
 {
-    "access_token": "f31da4d2-729c-4d9b-b743-dc96862bb954",
+    "access_token": "1fbec294-f1b3-42b2-8bc0-4d705852c1b1",
     "token_type": "bearer",
-    "refresh_token": "f9ffd075-0daf-49e4-8d02-d7183cb00b27",
+    "refresh_token": "b5b9d2a4-ae40-4c4a-99d9-34c62c10e4cd",
     "expires_in": 1295999,
     "pic": "http://shop.lemonban.com:8108/2024/02/736fc556dc79428b857ecbbf1a33ba02.png",
     "userId": "b1e225b251574d059e55c050a288b92d",

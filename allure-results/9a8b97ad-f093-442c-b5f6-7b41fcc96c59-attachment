@@ -1,0 +1,39 @@
+Request method:	POST
+Request URI:	http://mall.lemonban.com:8107/p/shopCart/changeItem
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=bearerae511bb3-7528-4adf-811f-897351f5e944
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "basketId": 0,
+    "count": 1,
+    "prodId": "null",
+    "shopId": 1,
+    "skuId": null
+}
+HTTP/1.1 400 
+Content-Length: 20
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: text/plain;charset=UTF-8
+Date: Tue, 13 Feb 2024 09:27:04 GMT
+Expires: 0
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Set-Cookie: JSESSIONID=9D71C53BCB6D4511EF5F8094E368707D; Path=/; HttpOnly
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+商品ID不能为空

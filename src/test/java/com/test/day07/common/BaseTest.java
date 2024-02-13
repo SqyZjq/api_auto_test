@@ -32,13 +32,13 @@ public class BaseTest {
         //PrintStream 打印输出流，将控制台的日志打印输出到文件
         PrintStream printStream = null;
         //创建一个target/log文件夹用来存储所有的接口日志文件
-        String logfileDir = System.getProperty("user.dir")+"\\log";
+        String logfileDir = System.getProperty("user.dir")+File.separator+"log";
         File file = new File(logfileDir);
         if(!file.exists()){
             //创建该文件夹路径
             file.mkdirs();
         }
-        String logfilePath = logfileDir+"\\testlog_"+excelData.getTitle();
+        String logfilePath = logfileDir+File.separator+"testlog_"+excelData.getTitle();
         try {
             printStream = new PrintStream(new File(logfilePath));
         } catch (FileNotFoundException e) {

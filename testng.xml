@@ -3,10 +3,7 @@
 <suite name="测试套件" >
     <test name="测试">
         <classes>
-            <class name="com.test.day08.testcases.LoginTest"/>
-            <class name="com.test.day08.testcases.SearchProductTest"/>
-            <class name="com.test.day08.testcases.AddCartTest"/>
-            <class name="com.test.day08.testcases.RegisterTest"/>
+            <class name="com.test.day09.testcases.UserProfileSettingTest"/>
         </classes>
     </test>
 </suite>

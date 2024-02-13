@@ -1,0 +1,35 @@
+Request method:	GET
+Request URI:	http://mall.lemonban.com:8107/prod/prodInfo?prodId=null
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 
+Transfer-Encoding: chunked
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Tue, 13 Feb 2024 09:49:15 GMT
+Expires: 0
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+{
+    "timestamp": "2024-02-13 17:49:16",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "",
+    "path": "/prod/prodInfo"
+}

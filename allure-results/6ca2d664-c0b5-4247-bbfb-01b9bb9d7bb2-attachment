@@ -1,5 +1,5 @@
 Request method:	GET
-Request URI:	http://mall.lemonban.com:8107/search/searchProdPage?prodName=%E8%A1%A3%E6%9F%9C
+Request URI:	http://mall.lemonban.com:8107/prod/prodInfo?prodId=null
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -9,12 +9,12 @@ Headers:		Accept=*/*
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 200 
+HTTP/1.1 400 
 Transfer-Encoding: chunked
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Connection: keep-alive
 Content-Type: application/json
-Date: Mon, 12 Feb 2024 10:13:35 GMT
+Date: Tue, 13 Feb 2024 09:27:04 GMT
 Expires: 0
 Keep-Alive: timeout=4
 Pragma: no-cache
@@ -27,19 +27,9 @@ X-Frame-Options: DENY
 X-Xss-Protection: 1; mode=block
 
 {
-    "records": [
-        
-    ],
-    "total": 0,
-    "size": 10,
-    "current": 1,
-    "orders": [
-        
-    ],
-    "optimizeCountSql": true,
-    "hitCount": false,
-    "countId": null,
-    "maxLimit": null,
-    "searchCount": true,
-    "pages": 0
+    "timestamp": "2024-02-13 17:27:05",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "",
+    "path": "/prod/prodInfo"
 }

@@ -1,0 +1,42 @@
+Request method:	POST
+Request URI:	http://mall.lemonban.com:8107/p/order/pay
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=bearer91203a50-9daf-4beb-a880-4dfae3d7ad94
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "payType": 3,
+    "orderNumbers": "null"
+}
+HTTP/1.1 500 
+Transfer-Encoding: chunked
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Tue, 13 Feb 2024 13:39:58 GMT
+Expires: 0
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Set-Cookie: JSESSIONID=2B07B474F0DE62B480CF75C3A91662D8; Path=/; HttpOnly
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+{
+    "timestamp": "2024-02-13 21:39:58",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "",
+    "path": "/p/order/pay"
+}

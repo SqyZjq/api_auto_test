@@ -3,8 +3,8 @@ package com.test.day08.common;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.test.day08.config.Config;
-import com.test.day08.config.Environment;
 import com.test.day08.testcases.ExcelData;
+import com.test.day09.config.Environment;
 import io.qameta.allure.Allure;
 import io.restassured.RestAssured;
 import io.restassured.config.LogConfig;
@@ -164,9 +164,13 @@ public class BaseTest {
         Pattern pattern = Pattern.compile("#(.+?)#");
         Matcher matcher = pattern.matcher(str);
         while (matcher.find()) {
+            //group(0)表示匹配到的整个字符串--#(.+?)#
             String subStr = matcher.group(0);
+            //group(1)表示匹配到的第一个分组--(.+?)
             String param = matcher.group(1);
             Object value = Environment.env.get(param);
+            //假设环境变量 Environment.env 中有一个键值对 "username" -> "admin"，然后你有一个字符串 str = "Hello, #username#"，使用这段代码处理后，str 就会被替换为 "Hello, admin"。
+            str = str.replace(subStr, value + "");
             str = str.replace(subStr, value + "");
         }
         return str;

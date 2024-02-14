@@ -1,0 +1,171 @@
+Request method:	POST
+Request URI:	http://mall.lemonban.com:8107/p/shopCart/info
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=bearer91203a50-9daf-4beb-a880-4dfae3d7ad94
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    
+]
+HTTP/1.1 200 
+Transfer-Encoding: chunked
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Tue, 13 Feb 2024 13:39:58 GMT
+Expires: 0
+Keep-Alive: timeout=4
+Pragma: no-cache
+Proxy-Connection: keep-alive
+Set-Cookie: JSESSIONID=D6E29E76ADBEAF1C5F8E27A1A412DB42; Path=/; HttpOnly
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+
+[
+    {
+        "shopId": 1,
+        "shopName": "碧海蓝天",
+        "shopCityStatus": 0,
+        "shopCartItemDiscounts": [
+            {
+                "totalAmount": null,
+                "chooseDiscountItemDto": {
+                    "discountId": 281,
+                    "discountRule": 0,
+                    "needAmount": 100.0,
+                    "discountType": 0,
+                    "prodCount": 1,
+                    "prodsPrice": 388.0,
+                    "discount": 90.0,
+                    "reduceAmount": 90.0
+                },
+                "shopCartItems": [
+                    {
+                        "prodName": "lucky炫酷全球首发限量版跑鞋",
+                        "prodNameCn": "lucky炫酷全球首发限量版跑鞋",
+                        "prodNameEn": "lucky炫酷全球首发限量版跑鞋",
+                        "prodCount": 1,
+                        "pic": "http://shop.lemonban.com:8108/2022/11/90c1c41aea4944daa2d090a4ecb6d5c0.jpeg",
+                        "price": 388.0,
+                        "categoryId": null,
+                        "productTotalAmount": 388.0,
+                        "prodId": 152,
+                        "skuId": 7340,
+                        "skuName": "",
+                        "useScore": null,
+                        "scorePrice": 0,
+                        "basketId": 8692,
+                        "actualTotal": null,
+                        "discountId": 281,
+                        "shareReduce": 0.0,
+                        "isShareReduce": null,
+                        "scorePayReduce": null,
+                        "discounts": [
+                            {
+                                "discountId": 284,
+                                "shopId": null,
+                                "mobilePic": null,
+                                "pcPic": null,
+                                "pcBackgroundPic": null,
+                                "discountName": "全部商品参与+每满一次减一次ysf_ytv",
+                                "discountRule": null,
+                                "discountType": null,
+                                "suitableProdType": null,
+                                "maxReduceAmount": null,
+                                "startTime": null,
+                                "endTime": null,
+                                "discountItems": null
+                            },
+                            {
+                                "discountId": 288,
+                                "shopId": null,
+                                "mobilePic": null,
+                                "pcPic": null,
+                                "pcBackgroundPic": null,
+                                "discountName": "满件打折3件八折ysf_OZbQ",
+                                "discountRule": null,
+                                "discountType": null,
+                                "suitableProdType": null,
+                                "maxReduceAmount": null,
+                                "startTime": null,
+                                "endTime": null,
+                                "discountItems": null
+                            },
+                            {
+                                "discountId": 285,
+                                "shopId": null,
+                                "mobilePic": null,
+                                "pcPic": null,
+                                "pcBackgroundPic": null,
+                                "discountName": "满钱打折满20减5ysf_YtXA",
+                                "discountRule": null,
+                                "discountType": null,
+                                "suitableProdType": null,
+                                "maxReduceAmount": null,
+                                "startTime": null,
+                                "endTime": null,
+                                "discountItems": null
+                            },
+                            {
+                                "discountId": 287,
+                                "shopId": null,
+                                "mobilePic": null,
+                                "pcPic": null,
+                                "pcBackgroundPic": null,
+                                "discountName": "满减打折30元5折ysf_evo",
+                                "discountRule": null,
+                                "discountType": null,
+                                "suitableProdType": null,
+                                "maxReduceAmount": null,
+                                "startTime": null,
+                                "endTime": null,
+                                "discountItems": null
+                            },
+                            {
+                                "discountId": 281,
+                                "shopId": null,
+                                "mobilePic": null,
+                                "pcPic": null,
+                                "pcBackgroundPic": null,
+                                "discountName": "满钱减钱全部商品参与ysf_AJoJ",
+                                "discountRule": null,
+                                "discountType": null,
+                                "suitableProdType": null,
+                                "maxReduceAmount": null,
+                                "startTime": null,
+                                "endTime": null,
+                                "discountItems": null
+                            }
+                        ],
+                        "deliveryMode": "{\"hasUserPickUp\": false, \"hasCityDelivery\": false, \"hasShopDelivery\": true}",
+                        "deliveryModeVO": {
+                            "hasUserPickUp": false,
+                            "hasShopDelivery": true,
+                            "hasCityDelivery": false
+                        },
+                        "isCheck": false,
+                        "shopId": 1,
+                        "shopName": "碧海蓝天",
+                        "oriPrice": 668.0,
+                        "distributionCardNo": null,
+                        "basketDate": "2024-02-12 16:47:40",
+                        "preSellStatus": null,
+                        "preSellTime": null,
+                        "shopCityStatus": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

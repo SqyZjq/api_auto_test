@@ -46,6 +46,7 @@ public class BaseTest {
         //思路：if...else...,通过请求方法来进行判断
         //做日志持久化存储配置-将日志保存到文件中
         //PrintStream 打印输出流，将控制台的日志打印输出到文件
+        //-----1.参数持久化-日志的持久化----
         PrintStream printStream = null;
         //创建一个target/log文件夹用来存储所有的接口日志文件
         String logfileDir = System.getProperty("user.dir") + File.separator+"log";
@@ -61,8 +62,7 @@ public class BaseTest {
             e.printStackTrace();
         }
         RestAssured.config = RestAssuredConfig.config().logConfig(LogConfig.logConfig().defaultStream(printStream));
-
-        //做参数替换动作
+        //-----2.参数持久化-做参数替换动作----
         //替换三部分请求地址、请求头、请求参数
         String url = excelData.getUrl();
         if (url != null) {
@@ -76,7 +76,7 @@ public class BaseTest {
         if (param != null) {
             param = replaceParam(param);
         }
-
+        //---3.发起接口请求----
         Response res = null;
         //json格式字符串转成map类型 - Jackson
         ObjectMapper objectMapper = new ObjectMapper();
@@ -119,14 +119,14 @@ public class BaseTest {
             //后续再完善
         }
         Allure.descriptionHtml("XXXXXXXXX");
-        //接口请求结束之后，将接口日志添加到Allure报告中
+        //----4.接口请求结束之后，将接口日志添加到Allure报告中---
         try {
             Allure.addAttachment("接口请求日志&响应日志", new FileInputStream(logfilePath));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
-        //提取响应字段并且将其保存到环境变量中 {"prodId":"records[0].prodId","price":"records[0].price"}
+        //---5.提取字段并且将其保存到环境变量中 {"prodId":"records[0].prodId","price":"records[0].price"}
         String extractStr = excelData.getExtract();
         //判断是否为空
         if (extractStr != null) {
@@ -203,9 +203,12 @@ public class BaseTest {
         Pattern pattern = Pattern.compile("#(.+?)#");
         Matcher matcher = pattern.matcher(str);
         while (matcher.find()) {
+            //group(0)表示匹配到的整个字符串--#(.+?)#
             String subStr = matcher.group(0);
+            //group(1)表示匹配到的第一个分组--(.+?)
             String param = matcher.group(1);
             Object value = Environment.env.get(param);
+            //假设环境变量 Environment.env 中有一个键值对 "username" -> "admin"，然后你有一个字符串 str = "Hello, #username#"，使用这段代码处理后，str 就会被替换为 "Hello, admin"。
             str = str.replace(subStr, value + "");
         }
         return str;

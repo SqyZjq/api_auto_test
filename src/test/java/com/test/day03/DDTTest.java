@@ -49,7 +49,7 @@ public class DDTTest {
         //设置数据驱动测试 数据源
         //todo:读取Excel中的数据 - easyexcel,head映射到ExcelData实体类的属性值,属性值映射到Excel中的表头
         //todo:ExcelData实体类读取的是一行数据,所有行的数据需要用List集合保存,doReadSync()返回的是List集合类型
-        List<ExcelData> allDatas = EasyExcel.read("src/test/resources/testdata.xlsx").
+        List<ExcelData> allDatas = EasyExcel.read("src/test/resources/testdata03.xlsx").
                 head(ExcelData.class).sheet("Sheet1").doReadSync();
         System.out.println(allDatas);
         //需要把List集合类型转换为数组类型

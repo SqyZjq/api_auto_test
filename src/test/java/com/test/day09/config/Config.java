@@ -14,5 +14,5 @@ public class Config {
     public static final String DB_PASSWORD = "lemon123";
 
     //用例数据文件路径
-    public static final String TEST_DATA_FILE="src/test/resources/testdata.xlsx";
+    public static final String TEST_DATA_FILE="src/test/resources/testdata09.xlsx";
 }

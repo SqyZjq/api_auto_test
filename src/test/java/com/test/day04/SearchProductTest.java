@@ -59,7 +59,7 @@ public class SearchProductTest extends BaseTest{
 
     @DataProvider
     public Object[] getDatas(){
-        List<ExcelData> allDatas = EasyExcel.read("src/test/resources/testdata.xlsx").
+        List<ExcelData> allDatas = EasyExcel.read("src/test/resources/testdata04.xlsx").
                 head(ExcelData.class).sheet("搜索商品接口").doReadSync();
         //todo:需要把集合类型转换为数组类型
         return allDatas.toArray();

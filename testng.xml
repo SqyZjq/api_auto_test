@@ -3,7 +3,7 @@
 <suite name="测试套件" >
     <test name="测试">
         <classes>
-            <class name="com.test.day09.testcases.UserProfileSettingTest"/>
+            <class name="com.test.day10.testcases.OrderPayTest2"/>
         </classes>
     </test>
 </suite>

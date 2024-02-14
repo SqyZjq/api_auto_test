@@ -4,6 +4,12 @@
     <test name="测试">
         <classes>
             <class name="com.test.day10.testcases.OrderPayTest2"/>
+            <class name="com.test.day10.testcases.OrderPayTest"/>
+            <class name="com.test.day10.testcases.AddCartTest"/>
+            <class name="com.test.day10.testcases.LoginTest"/>
+            <class name="com.test.day10.testcases.RegisterTest"/>
+            <class name="com.test.day10.testcases.SearchProductTest"/>
+            <class name="com.test.day10.testcases.UserProfileSettingTest"/>
         </classes>
     </test>
 </suite>

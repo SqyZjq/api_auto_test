@@ -77,6 +77,15 @@
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version> <!-- 使用最新的版本号 -->
         </dependency>
+        <!-- 通过maven引入本地的加密jar包 -->
+        <!-- ${basedir} : 表示当前项目的根目录 -->
+        <dependency>
+            <groupId>com.lemon</groupId>
+            <artifactId>encryption</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/lemon.jar</systemPath>
+        </dependency>
 
 
 
